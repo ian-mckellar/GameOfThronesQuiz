@@ -1,3 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Game Of Thrones Quiz</string>
+    <string name="favorite_char">Question 1: Who is your Favorite Charater?</string>
+    <string name="favorite_char_editText">Favorite Character</string>
+
+    <string name="q_2">Question 2: Who killed Joffrey Baratheon?</string>
+    <string name="q_2_answer_a">Sansa Stark</string>
+    <string name="q_2_answer_b">Olenna Tyrell</string>
+    <string name="q_2_answer_c">Tyrion Lannister</string>
+    <string name="q_2_answer_d">Peter Baelish</string>
+
+    <string name="q_3">Question 3: Sam Tarly is Baby Sam's Father</string>
+    <string name="q_3_answer_a">true</string>
+    <string name="q_3_answer_b">false</string>
+
+    <string name="q_4">Question 4: Which one of Daenerys Targaryen\'s dragons was killed?</string>
+    <string name="q_4_answer_a">Drogon</string>
+    <string name="q_4_answer_b">Rhaegal</string>
+    <string name="q_4_answer_c">Viserion</string>
 </resources>

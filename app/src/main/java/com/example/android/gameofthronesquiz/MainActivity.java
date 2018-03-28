@@ -11,20 +11,27 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     int score = 0;
     private TextView scoreTextView;
+    private CheckBox q2AnswerB;
+    private CheckBox q2AnswerD;
+    private RadioButton question3Answer;
+    private RadioButton question4Answer;
+    private Button finishButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        scoreTextView = (TextView) findViewById(R.id.text_view_score);
+        q2AnswerB = (CheckBox) findViewById(R.id.q_2_answer_b);
+        q2AnswerD = (CheckBox) findViewById(R.id.q_2_answer_d);
+        question3Answer = (RadioButton) findViewById(R.id.q_3_answer_b);
+        question4Answer = (RadioButton) findViewById(R.id.q_4_answer_c);
+        finishButton = (Button) findViewById(R.id.button_finish);
+
     }
 
     public void submit(View view) {
-        // right answers
-        CheckBox q2AnswerB = (CheckBox) findViewById(R.id.q_2_answer_b);
-        CheckBox q2AnswerD = (CheckBox) findViewById(R.id.q_2_answer_d);
-        RadioButton question3Answer = (RadioButton) findViewById(R.id.q_3_answer_b);
-        RadioButton question4Answer = (RadioButton) findViewById(R.id.q_4_answer_c);
-        Button finishButton = (Button) findViewById(R.id.button_finish);
+        // right answer
 
         if (q2AnswerB.isChecked() && q2AnswerD.isChecked()) {
             score += 1;
@@ -44,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayScore(int score) {
-        scoreTextView = (TextView) findViewById(R.id.text_view_score);
         scoreTextView.setText("Score: " + score);
     }
 }
