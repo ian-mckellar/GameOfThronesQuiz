@@ -18,4 +18,7 @@
     <string name="q_4_answer_a">Drogon</string>
     <string name="q_4_answer_b">Rhaegal</string>
     <string name="q_4_answer_c">Viserion</string>
+
+    <string name="submit">submit</string>
+    <string name="score">score: %d</string>
 </resources>

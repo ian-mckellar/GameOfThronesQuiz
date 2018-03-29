@@ -2,7 +2,9 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fontFamily="@font/gameofthrones"
+    android:textColor="@android:color/black">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -10,107 +12,68 @@
         android:orientation="vertical">
 
         <TextView
+            style="@style/TextViewTheme"
+            android:layout_marginTop="16sp"
+            android:textAppearance="?android:textAppearanceLarge"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_medium"
-            android:fontFamily="@font/gameofthrones"
             android:gravity="center_horizontal"
-            android:text="@string/app_name"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="@android:color/black" />
+            android:text="@string/app_name" />
 
         <View
-            android:layout_width="match_parent"
-            android:layout_height="1sp"
-            android:layout_marginBottom="@dimen/margin_medium"
-            android:layout_marginLeft="@dimen/margin_medium"
-            android:layout_marginRight="@dimen/margin_medium"
-            android:background="@android:color/black" />
+            style="@style/ViewTheme"/>
 
         <TextView
+            style="@style/TextViewTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin_small"
-            android:layout_marginLeft="@dimen/margin_medium"
-            android:fontFamily="@font/gameofthrones"
-            android:text="@string/favorite_char"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/black" />
+            android:text="@string/favorite_char" />
 
         <EditText
             android:id="@+id/favorite_character_name"
+            style="@style/QuestionTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin_medium"
-            android:layout_marginLeft="@dimen/margin_large"
-            android:fontFamily="@font/gameofthrones"
             android:hint="@string/favorite_char_editText"
-            android:inputType="text"
-            android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="@android:color/black" />
+            android:inputType="text" />
 
         <View
-            android:layout_width="match_parent"
-            android:layout_height="1sp"
-            android:layout_marginBottom="@dimen/margin_medium"
-            android:layout_marginLeft="@dimen/margin_medium"
-            android:layout_marginRight="@dimen/margin_medium"
-            android:background="@android:color/black" />
+            style="@style/ViewTheme"/>
 
         <!--QUESTION 2-->
         <TextView
+            style="@style/TextViewTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin_medium"
-            android:layout_marginLeft="@dimen/margin_medium"
-            android:fontFamily="@font/gameofthrones"
-            android:text="@string/q_2"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/black" />
+            android:text="@string/q_2" />
 
         <CheckBox
             android:id="@+id/q_2_answer_a"
+            style="@style/QuestionTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin_small"
-            android:layout_marginLeft="@dimen/margin_large"
-            android:fontFamily="@font/gameofthrones"
-            android:text="@string/q_2_answer_a"
-            android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="@android:color/black" />
+            android:text="@string/q_2_answer_a" />
 
         <CheckBox
             android:id="@+id/q_2_answer_b"
+            style="@style/QuestionTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin_small"
-            android:layout_marginLeft="@dimen/margin_large"
-            android:fontFamily="@font/gameofthrones"
-            android:text="@string/q_2_answer_b"
-            android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="@android:color/black" />
+            android:text="@string/q_2_answer_b" />
 
         <CheckBox
             android:id="@+id/q_2_answer_c"
+            style="@style/QuestionTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin_small"
-            android:layout_marginLeft="@dimen/margin_large"
-            android:fontFamily="@font/gameofthrones"
-            android:text="@string/q_2_answer_c"
-            android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="@android:color/black" />
+            android:text="@string/q_2_answer_c" />
 
         <CheckBox
             android:id="@+id/q_2_answer_d"
+            style="@style/QuestionTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin_medium"
-            android:layout_marginLeft="@dimen/margin_large"
-            android:fontFamily="@font/gameofthrones"
-            android:text="Peter Baelish"
-            android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="@android:color/black" />
+            android:text="@string/q_2_answer_d" />
         <!--END QUESTION 2-->
 
         <View
@@ -123,14 +86,10 @@
 
         <!--QUESTION 3-->
         <TextView
+            style="@style/TextViewTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin_medium"
-            android:layout_marginLeft="@dimen/margin_medium"
-            android:fontFamily="@font/gameofthrones"
-            android:text="@string/q_3"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/black" />
+            android:text="@string/q_3" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -142,48 +101,31 @@
 
                 <RadioButton
                     android:id="@+id/q_3_answer_a"
+                    style="@style/QuestionTheme"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin_small"
-                    android:layout_marginLeft="@dimen/margin_large"
-                    android:fontFamily="@font/gameofthrones"
-                    android:text="@string/q_3_answer_a"
-                    android:textAppearance="?android:textAppearanceSmall"
-                    android:textColor="@android:color/black" />
+                    android:text="@string/q_3_answer_a" />
 
                 <RadioButton
                     android:id="@+id/q_3_answer_b"
+                    style="@style/QuestionTheme"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin_medium"
-                    android:layout_marginLeft="@dimen/margin_large"
-                    android:fontFamily="@font/gameofthrones"
-                    android:text="@string/q_3_answer_b"
-                    android:textAppearance="?android:textAppearanceSmall"
-                    android:textColor="@android:color/black" />
+                    android:text="@string/q_3_answer_b" />
             </RadioGroup>
 
         </LinearLayout>
         <!--END QUESTION 3-->
 
         <View
-            android:layout_width="match_parent"
-            android:layout_height="1sp"
-            android:layout_marginBottom="@dimen/margin_medium"
-            android:layout_marginLeft="@dimen/margin_medium"
-            android:layout_marginRight="@dimen/margin_medium"
-            android:background="@android:color/black" />
+            style="@style/ViewTheme" />
 
         <!--QUESTION 4-->
         <TextView
+            style="@style/TextViewTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin_small"
-            android:layout_marginLeft="@dimen/margin_medium"
-            android:fontFamily="@font/gameofthrones"
-            android:text="@string/q_4"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/black" />
+            android:text="@string/q_4" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -191,48 +133,30 @@
 
             <RadioButton
                 android:id="@+id/q_4_answer_a"
+                style="@style/QuestionTheme"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_small"
-                android:layout_marginLeft="@dimen/margin_large"
-                android:fontFamily="@font/gameofthrones"
-                android:text="@string/q_4_answer_a"
-                android:textAppearance="?android:textAppearanceSmall"
-                android:textColor="@android:color/black" />
+                android:text="@string/q_4_answer_a" />
 
             <RadioButton
                 android:id="@+id/q_4_answer_b"
+                style="@style/QuestionTheme"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_small"
-                android:layout_marginLeft="@dimen/margin_large"
-                android:fontFamily="@font/gameofthrones"
-                android:text="@string/q_4_answer_b"
-                android:textAppearance="?android:textAppearanceSmall"
-                android:textColor="@android:color/black" />
+                android:text="@string/q_4_answer_b" />
 
             <RadioButton
                 android:id="@+id/q_4_answer_c"
+                style="@style/QuestionTheme"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_medium"
-                android:layout_marginLeft="@dimen/margin_large"
-                android:fontFamily="@font/gameofthrones"
-                android:text="@string/q_4_answer_c"
-                android:textAppearance="?android:textAppearanceSmall"
-
-                android:textColor="@android:color/black" />
+                android:text="@string/q_4_answer_c" />
 
         </RadioGroup>
         <!--END QUESTION 4-->
 
         <View
-            android:layout_width="match_parent"
-            android:layout_height="1sp"
-            android:layout_marginBottom="@dimen/margin_medium"
-            android:layout_marginLeft="@dimen/margin_medium"
-            android:layout_marginRight="@dimen/margin_medium"
-            android:background="@android:color/black" />
+            style="@style/ViewTheme" />
 
         <Button
             android:id="@+id/button_finish"
@@ -242,7 +166,7 @@
             android:fontFamily="@font/gameofthrones"
             android:gravity="center_horizontal"
             android:onClick="submit"
-            android:text="finish"
+            android:text="@string/submit"
             android:textColor="@android:color/black" />
 
         <TextView
