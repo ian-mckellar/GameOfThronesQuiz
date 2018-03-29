@@ -176,7 +176,7 @@
             android:layout_margin="@dimen/margin_medium"
             android:fontFamily="@font/gameofthrones"
             android:gravity="center_horizontal"
-            android:text="Score: "
+            android:text="@string/score_before_submit"
             android:textAppearance="?android:textAppearanceLarge"
             android:textColor="@android:color/black" />
 

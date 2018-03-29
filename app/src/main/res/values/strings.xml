@@ -20,5 +20,6 @@
     <string name="q_4_answer_c">Viserion</string>
 
     <string name="submit">submit</string>
+    <string name="score_before_submit">Hit Submit To Find Your Score</string>
     <string name="score">score: %d</string>
 </resources>

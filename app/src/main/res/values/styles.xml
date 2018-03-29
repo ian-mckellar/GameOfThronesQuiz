@@ -34,10 +34,3 @@
 
 </resources>
 
-    <!--
-            android:layout_marginBottom="@dimen/margin_small"
-            android:layout_marginLeft="@dimen/margin_large"
-            android:fontFamily="@font/gameofthrones"
-            android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="@android:color/black"
-     -->
