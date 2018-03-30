@@ -1,5 +1,6 @@
 package com.example.android.gameofthronesquiz;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,7 +12,8 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    int score = 0;
+    private int score = 0;
+
     private TextView scoreTextView;
     private CheckBox q2AnswerB;
     private CheckBox q2AnswerD;
@@ -19,11 +21,11 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton question4Answer;
     private Button finishButton;
     private EditText favoriteChar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         scoreTextView = (TextView) findViewById(R.id.text_view_score);
         q2AnswerB = (CheckBox) findViewById(R.id.q_2_answer_b);
         q2AnswerD = (CheckBox) findViewById(R.id.q_2_answer_d);
@@ -31,36 +33,38 @@ public class MainActivity extends AppCompatActivity {
         question4Answer = (RadioButton) findViewById(R.id.q_4_answer_c);
         finishButton = (Button) findViewById(R.id.button_finish);
         favoriteChar = (EditText) findViewById(R.id.favorite_character_name);
-    }
 
-    public void submit(View view) {
-        // right answer
-        String favoriteCharString = favoriteChar.getText().toString();
+        finishButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                String favoriteCharString = favoriteChar.getText().toString();
 
-        if (!favoriteCharString.isEmpty()) {
-            score +=1;
-        }
+                if (!favoriteCharString.isEmpty()) {
+                    score +=1;
+                }
 
-        if (q2AnswerB.isChecked() && q2AnswerD.isChecked()) {
-            score += 1;
-        }
+                if (q2AnswerB.isChecked() && q2AnswerD.isChecked()) {
+                    score += 1;
+                }
 
-        if (question3Answer.isChecked()) {
-            score += 1;
-        }
+                if (question3Answer.isChecked()) {
+                    score += 1;
+                }
 
-        if (question4Answer.isChecked()) {
-            score += 1;
-        }
+                if (question4Answer.isChecked()) {
+                    score += 1;
+                }
 
-        finishButton.setEnabled(false);
+                finishButton.setEnabled(false);
 
-        displayScore(score);
-    }
+                //displayScore(score);
 
-    public void displayScore(int score) {
-        Resources resource = getResources();
-        String scoreText = resource.getString(R.string.score, score);
-        scoreTextView.setText(scoreText);
+                Bundle extras = new Bundle();
+                extras.putInt("score", score);
+                intent.putExtras(extras);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -79,9 +79,9 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1sp"
-            android:layout_marginBottom="@dimen/margin_medium"
-            android:layout_marginLeft="@dimen/margin_medium"
-            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/medium"
+            android:layout_marginLeft="@dimen/medium"
+            android:layout_marginRight="@dimen/medium"
             android:background="@android:color/black" />
 
         <!--QUESTION 3-->
@@ -162,10 +162,9 @@
             android:id="@+id/button_finish"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_medium"
+            android:layout_margin="@dimen/medium"
             android:fontFamily="@font/gameofthrones"
             android:gravity="center_horizontal"
-            android:onClick="submit"
             android:text="@string/submit"
             android:textColor="@android:color/black" />
 
@@ -173,7 +172,7 @@
             android:id="@+id/text_view_score"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_medium"
+            android:layout_margin="@dimen/medium"
             android:fontFamily="@font/gameofthrones"
             android:gravity="center_horizontal"
             android:text="@string/score_before_submit"
