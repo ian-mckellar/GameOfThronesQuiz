@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fontFamily="@font/gameofthrones"
@@ -13,32 +12,30 @@
 
         <TextView
             style="@style/TextViewTheme"
-            android:layout_marginTop="16sp"
-            android:textAppearance="?android:textAppearanceLarge"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
             android:gravity="center_horizontal"
-            android:text="@string/app_name" />
+            android:text="@string/app_name"
+            android:textAppearance="?android:textAppearanceLarge" />
 
-        <View
-            style="@style/ViewTheme"/>
+        <View style="@style/ViewTheme" />
 
         <TextView
             style="@style/TextViewTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/favorite_char" />
+            android:text="@string/q_1" />
 
         <EditText
-            android:id="@+id/favorite_character_name"
+            android:id="@+id/who_betrayed_ned_stark"
             style="@style/QuestionTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/favorite_char_editText"
+            android:hint="@string/q_1_editText"
             android:inputType="text" />
 
-        <View
-            style="@style/ViewTheme"/>
+        <View style="@style/ViewTheme" />
 
         <!--QUESTION 2-->
         <TextView
@@ -117,8 +114,7 @@
         </LinearLayout>
         <!--END QUESTION 3-->
 
-        <View
-            style="@style/ViewTheme" />
+        <View style="@style/ViewTheme" />
 
         <!--QUESTION 4-->
         <TextView
@@ -155,8 +151,7 @@
         </RadioGroup>
         <!--END QUESTION 4-->
 
-        <View
-            style="@style/ViewTheme" />
+        <View style="@style/ViewTheme" />
 
         <Button
             android:id="@+id/button_finish"

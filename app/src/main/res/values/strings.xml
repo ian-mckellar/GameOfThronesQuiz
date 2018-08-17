@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Game Of Thrones Quiz</string>
-    <string name="favorite_char">Question 1: Who is your Favorite Charater?</string>
-    <string name="favorite_char_editText">Favorite Character</string>
+    <string name="q_1">Question 1: Who betrayed Ned Stark?</string>
+    <string name="q_1_editText">Enter your answer</string>
 
     <string name="q_2">Question 2: Who killed Joffrey Baratheon?</string>
     <string name="q_2_answer_a">Sansa Stark</string>

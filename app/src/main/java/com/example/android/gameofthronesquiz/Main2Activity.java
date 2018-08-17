@@ -2,8 +2,8 @@ package com.example.android.gameofthronesquiz;
 
 import android.content.Intent;
 import android.content.res.Resources;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
